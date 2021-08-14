@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import RestoreIcon from '@material-ui/icons/Restore';
-import Copyright from "@question-app/src/components/common/Copyright";
 import React from "react";
 type MobileTemplateProps = {};
 
@@ -21,7 +20,7 @@ const MobileTemplate: React.FC<MobileTemplateProps> = ({ ...props }) => {
         {props.children}
         <BottomNavigation
           value={value}
-          onChange={(event, newValue) => {
+          onChange={(_, newValue) => {
             setValue(newValue);
           }}
           showLabels
